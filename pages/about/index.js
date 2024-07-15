@@ -9,6 +9,9 @@ import {
   FaPhp,
   FaPython,
   FaBootstrap,
+  FaGithub,
+  FaGit,
+  FaJava
 } from "react-icons/fa";
 
 import {
@@ -18,7 +21,11 @@ import {
   SiMysql,
   SiMongodb,
   SiTailwindcss,
+  SiMui,
+  SiFlutter
 } from "react-icons/si";
+
+
 
 import { TbBrandCpp } from "react-icons/tb";
 
@@ -40,9 +47,10 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        // title: "Web Development",
+        title: "",
         icons: [
-          <FaHtml5 key="html5" />,
+          < FaHtml5 key="html5" />,
           <FaCss3 key="css3" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
@@ -54,18 +62,25 @@ const aboutData = [
         ],
       },
       {
-        title: "Libraries & Frameworks",
+        // title: "Libraries & Frameworks",
+        title: "",
         icons: [
           <FaBootstrap key="bootstrap" />,
           <SiTailwindcss key="tailwindcss" />,
+          <SiMui key="mui" />,
+          <FaGit key="git"/>,
+          <FaGithub key="github" />,
         ],
       },
       {
-        title: "Other Languages",
+        // title: "Other Languages",
+        title: "",
         icons: [
           <SiPhp key="php" />,
           <FaPython key="python" />,
           <TbBrandCpp key="cpp" />,
+          <FaJava key="java"/>,
+          <SiFlutter key="flutter"/>
         ],
       },
     ],
@@ -152,9 +167,12 @@ const About = () => {
             exit="hidden"
             className="max-w-[450px] xl:max-w-[400px] text-sm sm:text-lg mx-auto xl:mx-0 mb-3 xl:mb-12 px-6 xl:px-0"
           >
-            2 years ago, I began freelancing as a developer. Since then I have
-            done remote work for different clients, and collaborated on digital
-            products for consumer use.
+            2 years ago, I began{" "}
+            <sapn className="text-accent font-semibold">freelancing</sapn> as a
+            developer. Since then I have done remote work for different clients,
+            and collaborated on{" "}
+            <sapn className="text-accent font-semibold">digital products</sapn>{" "}
+            for consumer use.
           </motion.p>
           {/* COUNTERS */}
           <motion.div
@@ -238,7 +256,7 @@ const About = () => {
                   <div className="font-light mb-1 md:mb-0">{item.title}</div>
                   <div className="hidden xl:flex">-</div>
                   {/* STAGE/YEAR */}
-                  <div className="-mb-3 md:mb-0">{item.stage}</div>
+                  <div className="mb-3 md:mb-0">{item.stage}</div>
                   {/* ICONS */}
                   <div className="flex flex-row gap-x-2">
                     {item.icons?.map((icon, iconIndex) => {

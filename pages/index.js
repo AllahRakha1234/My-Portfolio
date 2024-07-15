@@ -7,8 +7,12 @@ import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 import ParticlesContainer from "../components/ParticlesContainer";
 
+// REACT
+import Image from "next/image";
+
 // HOME FUNCTION
 const Home = () => {
+  // REDNER
   return (
     // <div className="bg-primary/60 h-[85vh] xl:h-[100vh]">
     <div className="bg-primary/60 h-screen">
@@ -21,7 +25,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-2xl md:text-3xl font-bold leading-[1.3] xl:text-[2.7rem] xl:leading-[1.3] "
+            className="-mt-48 xl:mt-0 text-2xl md:text-3xl font-bold leading-[1.3] xl:text-[2.7rem] xl:leading-[1.3] "
           >
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
@@ -35,13 +39,38 @@ const Home = () => {
             className="max-w-sm md:max-w-lg text-md md:text-xl xl:max-w-xl mx-auto xl:mx-0 mt-2 md:mt-5 mb-10 xl:mb-6"
           >
             I&apos;m a BSCS student at National University of Sciences &
-            Technology, Islamabad, currently on an exciting journey of
-            exploration and growth.
+            Technology<span className="text-accent font-semibold"> (NUST)</span>
+            , Islamabad, currently on an exciting journey of exploration and
+            growth.
           </motion.p>
           {/* BUTTON */}
-          <div className="flex -mt-8 xl:mt-0 justify-center xl:hidden relative">
+          {/* <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex -mt-8 xl:mt-0 justify-center xl:hidden relative"
+          >
             <ProjectsBtn />
-          </div>
+          </motion.div> */}
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            id="homePageAvatarForSmallScreen"
+            className="w-full h-full max-h-[766px] max-w-[320px] absolute left-[20%] sm:left-[25%] md:left-[32%] lg:left-[36%] -bottom-[40%]"
+          >
+            <div className="xl:hidden xl:max-w-none">
+              <Image
+                src="/ar.png"
+                height={678}
+                width={737}
+                className="translate-z-0 w-full h-full rotate-90"
+                alt="Avatar Image"
+              />
+            </div>
+          </motion.div>
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
@@ -67,7 +96,7 @@ const Home = () => {
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
           // className="w-full h-full max-h-[1266px] max-w-[1330px] absolute rotate-12 bottom-56 lg:-right-[10%]"
-          className="w-full h-full max-h-[766px] max-w-[320px] absolute -bottom-56 lg:right-[15%]"
+          className="w-full h-full max-h-[766px] max-w-[320px] absolute -bottom-[42%] lg:right-[15%]"
         >
           <Avatar />
         </motion.div>

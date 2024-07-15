@@ -9,7 +9,7 @@ import { fadeIn } from "../../variants";
 // SERVICES FUNCTION
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 flex items-center py-28 sm:py-24 md:py-28 xl:py-32 xl:mr-2">
+    <div className="h-full bg-primary/30 flex items-center mt-8  md:mt-2 lg:mt-0 py-28 sm:py-24 md:py-28 xl:py-32 xl:mr-2">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-12">
@@ -29,14 +29,26 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[500px] lg:max-w-[400px] mx-auto lg:mx-0"
             >
-              Over the past few years, I have worked on a variety of projects
-              that showcase my skills in web development, design, and content
-              creation. From dynamic web applications to intuitive user
-              interfaces, my portfolio reflects my commitment to quality and
-              innovation. Explore my work to see how I can bring your ideas to
-              life.
+              Over the past few years, I have crafted an array of{" "}
+              <span className="text-accent font-semibold">
+                {" "}
+                innovative projects{" "}
+              </span>{" "}
+              that highlight my expertise in web development, design, and
+              content creation. From crafting{" "}
+              <span className="text-accent font-semibold">
+                dynamic web applications
+              </span>{" "}
+              to designing intuitive user interfaces, my portfolio embodies my
+              passion for{" "}
+              <span className="text-accent font-semibold">
+                {" "}
+                excellence and creativity.{" "}
+              </span>{" "}
+              Dive into my work and discover how I can transform your vision
+              into reality.
             </motion.p>
           </div>
           {/* SLIDER */}

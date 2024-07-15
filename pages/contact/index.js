@@ -8,6 +8,7 @@ import { fadeIn } from "../../variants";
 import { BsArrowRight } from "react-icons/bs";
 // EMAILJS
 import emailjs from "@emailjs/browser";
+import validator from "validator";
 // TOAST FUNCTION
 import { Toaster } from "react-hot-toast";
 import { notifySuccess, notifyError } from "../../utils/utils";
@@ -19,8 +20,9 @@ import { MdEmail } from "react-icons/md";
 // TO SEND EMAIL TO RECIEVER
 const EMAIL_USER_ID = "ZlrD0g4QOHIgy6HWL";
 const EMAIL_SERVICE_ID = "service_tvqjusj";
-const EMAIL_TEMPLATE_ID = "template_mpdm4wc";
+const EMAIL_TEMPLATE_ID = "template_4viftci";
 emailjs.init(EMAIL_USER_ID);
+
 
 // CONTACT FUNCTION
 const Contact = () => {
@@ -47,12 +49,6 @@ const Contact = () => {
       setMessage(value);
     }
   };
-  // VALIDATEEMAIL FUNCTION
-  const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // if email is null, undefined, or a number, the String() function ensures that the input is safely converted to a string format before applying the regex test.
-    return re.test(String(email).toLowerCase()); // returns true if the email is valid
-  };
   // HANDLESENDBTN FUNCTION
   const handleSendBtn = (e) => {
     e.preventDefault();
@@ -60,7 +56,8 @@ const Contact = () => {
       notifyError("Please fill all the Fields!");
       return;
     }
-    if (!validateEmail(email)) {
+    // VALIDATING EMAIL
+    if (!validator.isEmail(email)) {
       notifyError("Please enter a valid Email Address!");
       return;
     }
@@ -70,6 +67,7 @@ const Contact = () => {
       user_name: name,
       user_email: email,
       to_email: "allahrakhahsp1234@gmail.com",
+      subject: subject,
       message: message,
     };
 

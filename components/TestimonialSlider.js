@@ -6,6 +6,12 @@ const testimonialData = [
     position: "NA",
     message: "No testimonial yet.",
   },
+  {
+    image: "/t-avt-3.png",
+    name: "NA",
+    position: "NA",
+    message: "No testimonial yet.",
+  },
 ];
 
 // icons

@@ -13,7 +13,6 @@ import {
 } from "react-icons/ri";
 // import { SiFiverr } from "react-icons/si";
 import { TbBrandFiverr } from "react-icons/tb";
-import { RiDownloadLine } from "react-icons/ri";
 import { FiDownload } from "react-icons/fi";
 
 // SOCIAL FUNCTION
@@ -34,37 +33,49 @@ const Socials = () => {
       >
         <Link
           href={"https://wa.me/923053442386"}
-          className="hover:text-accent transition-all duration-300 target:_blank"
+          className="hover:text-accent transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <RiWhatsappLine />
         </Link>
         <Link
           href={"https://www.instagram.com/allahrakhahsp.786/"}
           className="hover:text-accent transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <RiInstagramLine />
         </Link>
         <Link
           href={"https://www.facebook.com/rakha.zaidi.1"}
           className="hover:text-accent transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <RiFacebookLine />
         </Link>
         <Link
           href={"https://www.linkedin.com/in/allah-rakha-399831253/"}
           className="hover:text-accent transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <RiLinkedinLine />
         </Link>
         <Link
           href={"https://github.com/AllahRakha1234"}
           className="hover:text-accent transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <RiGithubLine />
         </Link>
         <Link
           href={"https://www.fiverr.com/arz_developer?public_mode=true"}
           className="hover:text-accent transition-all duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {/* <RiTelegramLine /> */}
           {/* <SiFiverr /> */}

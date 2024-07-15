@@ -35,15 +35,15 @@ const serviceData = [
   },
   {
     icon: <RxDesktop />,
-    title: "Content Development",
+    title: "Game Development",
     description:
-      "Create high-quality, efficient, and appelling content for websites and applications to ensure clear communication and user engagement.",
+      "Design and develop engaging and immersive games using modern technologies to provide users with captivating and interactive experiences.",
   },
   {
     icon: <RxReader />,
     title: "Database Management",
     description:
-      "Design, manage, and optimize databases using MongoDB and MySQL for efficient data storage and retrieval.",
+      "Design, manage, and optimize databases using MongoDB and MySQL to ensure efficient data storage, retrieval, and management.",
   },
   {
     icon: <RxRocket />,

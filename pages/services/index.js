@@ -9,7 +9,7 @@ import { fadeIn } from "../../variants";
 // SERVICES FUNCTION
 const Services = () => {
   return (
-    <div className="h-full bg-primary/30 flex items-center py-36 sm:py-28 md:py-24 xl:py-36 xl:mr-2">
+    <div className="h-full md:mt-4 lg:mt-0 bg-primary/30 flex items-center py-36 sm:py-28 md:py-24 xl:py-36 xl:mr-2">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-12">
@@ -29,14 +29,18 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[500px] lg:max-w-[400px] mx-auto lg:mx-0"
             >
-              With over 2 years of freelancing experience, I specialize in full
-              stack web development using the MERN stack. My services include
-              building dynamic websites, developing responsive user interfaces,
-              and creating robust back-end systems. I am proficient in
-              technologies like NodeJS, React, MongoDB, and more. Let&apos;s
-              work together to bring your project to life.
+              With over 2 years of freelancing experience, I specialize in{" "}
+              <span className="text-accent font-semibold">
+                full stack web development
+              </span>{" "}
+              using the MERN stack. My services include building dynamic
+              websites, developing responsive user interfaces, games, and creating
+              robust back-end systems. I am proficient in technologies like{" "}
+              <span className="text-accent font-semibold">
+                NodeJS, React, MongoDB, and more.
+              </span>{" "}
             </motion.p>
           </div>
           {/* SLIDER */}

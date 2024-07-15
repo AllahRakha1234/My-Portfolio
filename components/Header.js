@@ -18,7 +18,10 @@ const Header = () => {
               transition={{ duration: 1.1, delay: 0.5, ease: "easeInOut" }}
               className="lg sm:text-xl md:text-2xl xl:text-4xl"
             >
-              <span className="font-semibold">Allah</span> Rakha
+             <div className="headerTitle py-4 lg:py-0">
+              <span className="transition-all duration-300">Allah Rakha</span>
+              <span className="transition-all duration-300"> Allah Rakha</span>
+             </div>
             </motion.h1>
           </Link>
           {/* SOCIALS */}
