@@ -155,7 +155,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 max-w-[500px] text-2xl sm:text-3xl md:text-4xl mb-4 xl:mb-8 mx-auto xl:mx-0 font-semibold"
+            className="h2 max-w-[500px] text-2xl sm:text-3xl md:text-4xl mb-2 xl:mb-8 mx-auto xl:mx-0 font-semibold"
           >
             Captivating <span className="text-accent">stories</span> birth
             magnificent designs.
@@ -165,7 +165,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[450px] xl:max-w-[400px] text-sm sm:text-lg mx-auto xl:mx-0 mb-3 xl:mb-12 px-6 xl:px-0"
+            className="max-w-[450px] xl:max-w-[400px] text-sm sm:text-lg mx-auto xl:mx-0 mb-2 xl:mb-12 px-6 xl:px-0"
           >
             2 years ago, I began{" "}
             <sapn className="text-accent font-semibold">freelancing</sapn> as a
@@ -245,7 +245,7 @@ const About = () => {
             })}
           </div>
           {/* INFO */}
-          <div className="py-4 xl:py-6 flex flex-col gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-1 md:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div

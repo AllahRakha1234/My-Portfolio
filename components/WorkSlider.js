@@ -116,7 +116,7 @@ const WorkSlider = () => {
                     <div className="flex items-center justify-center overflow-hidden relative rounded-xl">
                       {/* IMAGE */}
                       {/* <div className="max-h-[200px] max-w-[350px] rounded-xl"> */}
-                      <div className="max-h-[16vh] max-w-[40vw] sm:max-h-[20vh] sm:max-w-[38vw] xl:max-h-[300px] xl:max-w-[500px] rounded-xl">
+                      <div className="max-h-[15vh] max-w-[40vw] sm:max-h-[20vh] sm:max-w-[38vw] xl:max-h-[300px] xl:max-w-[500px] rounded-xl">
                         <Image
                           src={projectInfo.path}
                           width={500}
@@ -127,7 +127,7 @@ const WorkSlider = () => {
                       {/* OVERLAY GRADIENT */}
                       <div className="absolute flex justify-center items-center inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700">
                         {/* LINKS */}
-                        <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-14 group-hover:sm:-translate-y-20 transition-all duration-300 text-white">
+                        <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-12 group-hover:sm:-translate-y-20 transition-all duration-300 text-white">
                           <div className="flex items-center gap-x-1 sm:gap-x-2 text-[8px] sm:text-[13px] tracking-[0.1em]">
                             {/* LINK PART 1 */}
                             {projectInfo.live_url !== "" && (

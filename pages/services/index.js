@@ -9,12 +9,12 @@ import { fadeIn } from "../../variants";
 // SERVICES FUNCTION
 const Services = () => {
   return (
-    <div className="h-full md:mt-4 lg:mt-0 bg-primary/30 flex items-center py-36 sm:py-28 md:py-24 xl:py-36 xl:mr-2">
+    <div className="h-full md:mt-4 lg:mt-0 bg-primary/30 flex items-center py-28 sm:py-28 md:py-24 xl:py-36 xl:mr-2">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-12">
           {/* TEXT */}
-          <div className="text-center flex flex-col xl:w-[30vw] lg:text-left mb-4 xl:mb-0">
+          <div className="text-center flex flex-col xl:w-[30vw] lg:text-left mb-2 xl:mb-0">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -29,18 +29,22 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[500px] lg:max-w-[400px] mx-auto lg:mx-0"
+              className="max-w-[500px] lg:max-w-[400px] mx-auto lg:mx-0"
             >
               With over 2 years of freelancing experience, I specialize in{" "}
               <span className="text-accent font-semibold">
                 full stack web development
               </span>{" "}
-              using the MERN stack. My services include building dynamic
-              websites, developing responsive user interfaces, games, and creating
-              robust back-end systems. I am proficient in technologies like{" "}
+              using the MERN stack. I build dynamic websites, responsive UIs,
+              games, and{" "}
               <span className="text-accent font-semibold">
-                NodeJS, React, MongoDB, and more.
+                robust back-end systems
+              </span>
+              . I am proficient in{" "}
+              <span className="text-accent font-semibold">
+                NodeJS, React, MongoDB,
               </span>{" "}
+              and more.
             </motion.p>
           </div>
           {/* SLIDER */}

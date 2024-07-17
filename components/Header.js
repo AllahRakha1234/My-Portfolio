@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="absolute z-30 w-full flex items-center xl:px-0 xl:h-[90px]">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-2 py-4 px-8 md:px-24">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-2 py-2 px-8 md:px-24">
           {/* NAME */}
           <Link href={"/"} className="cursor-pointer">
             <motion.h1
